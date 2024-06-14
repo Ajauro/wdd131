@@ -61,7 +61,7 @@ main {
     width: 100%;
     box-sizing: border-box;
     max-width: 2000px;
-    margin: 0 auto;
+    margin: 5 auto;
     box-sizing: border-box;
     justify-content: center;
 }
@@ -77,7 +77,7 @@ main {
     justify-content: center;
 }
 
-.card h1 {
+.card .common-style {
     display: block;
     font-size: 25px;
     text-align: center;
@@ -87,7 +87,7 @@ main {
     border-radius: 3px;
 }
 
-.card h2 {
+.card .different-style {
     font-size: 25px;
     text-align: center;
     margin: 7.5rem 0 0 0;
