@@ -6,12 +6,8 @@ body {
 
 .wrapper {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     text-align: center;
-}
-
-.wrapper > * {
-    flex: 1 100%;
 }
 
 header {
@@ -45,18 +41,17 @@ header {
 
 .footer {
     background: rgb(12, 12, 109);
-    height: 90px;
+    height: 100px;
     color: white;
     font-size: 18px;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 main {
-    display: flex;
-    height: 500px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 70% 30%;
     gap: 20px;
+    padding: 10px;
 }
 
 .card {
@@ -69,30 +64,19 @@ main {
     border: 1px solid rgba(0, 0, 82, 0.432);
 }
 
-.card:nth-child(1) {
-    flex: 0 0 70%; 
-    max-width: 70%;
-}
-
-.card:nth-child(2) {
-    max-width: 35%;
-}
-
 .card h1 {
     display: block;
     font-size: 25px;
     text-align: center;
     background-color: rgb(122, 176, 194);
-    margin: 2 -15px 15px -15px;
+    margin: 0px -15px 15px -15px;
     padding: 20px;
-
 }
 
 .card h2 {
     font-size: 25px;
     text-align: center;
     margin: 7.5rem 0 0 0;
-    text-align: center;
 }
 
 img {
@@ -114,13 +98,7 @@ img {
     margin: 1rem 1rem 1rem 0;
 }
 
-.card p:first-of-type {
-    margin: 1rem 1rem 1rem 0;
-    text-align: left;
-}
-
-.card p:last-of-type {
-    margin: 1rem 1rem 1rem 0;
+.card p {
     text-align: left;
 }
 
@@ -129,13 +107,13 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    height: 60%;
 }
+
 .nav a {
     display: block;
     padding: 10px;
     text-align: left;
-    justify-items: center;
+    width: 50%;
+    box-sizing: border-box;
 }
-
-
