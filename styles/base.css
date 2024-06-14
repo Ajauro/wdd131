@@ -11,17 +11,16 @@ body {
 }
 
 .wrapper > * {
-    padding: 10px;
     flex: 1 100%;
 }
 
 header {
     background: rgb(12, 12, 109);
-    height: 90px;
+    height: 100px;
     text-align: center;
     font-size: 15px;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .navigation {
@@ -49,7 +48,7 @@ header {
     height: 90px;
     color: white;
     font-size: 18px;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 main {
@@ -138,4 +137,5 @@ img {
     text-align: left;
     justify-items: center;
 }
+
 
