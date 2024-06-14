@@ -2,12 +2,18 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 2000px; 
+    margin: 0 auto;    
+    padding: 0 20px;   
 }
 
 header {
@@ -52,6 +58,11 @@ main {
     grid-template-columns: 70% 30%;
     gap: 20px;
     padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 2000px;
+    margin: 0 auto;
+    box-sizing: bor;
 }
 
 .card {
