@@ -61,7 +61,7 @@ main {
     width: 100%;
     box-sizing: border-box;
     max-width: 2000px;
-    margin: 5 auto;
+    margin: 0 auto;
     box-sizing: border-box;
     justify-content: center;
 }
