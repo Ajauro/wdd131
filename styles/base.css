@@ -77,7 +77,7 @@ main {
     justify-content: center;
 }
 
-.card .common-style {
+.card h2.common-style {
     display: block;
     font-size: 25px;
     text-align: center;
@@ -87,7 +87,7 @@ main {
     border-radius: 3px;
 }
 
-.card .different-style {
+.card h2.different-style {
     font-size: 25px;
     text-align: center;
     margin: 7.5rem 0 0 0;
