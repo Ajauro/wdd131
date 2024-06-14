@@ -62,7 +62,8 @@ main {
     box-sizing: border-box;
     max-width: 2000px;
     margin: 0 auto;
-    box-sizing: bor;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .card {
@@ -70,9 +71,10 @@ main {
     font-size: 15px;
     box-sizing: border-box;
     padding: 15px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 0.3rem;
     border: 1px solid rgba(0, 0, 82, 0.432);
+    justify-content: center;
 }
 
 .card h1 {
