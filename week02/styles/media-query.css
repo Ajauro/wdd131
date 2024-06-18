@@ -1,0 +1,21 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0.75rem;
+    background-color: rgba(137, 193, 219, 0.61);
+}
+main {
+    display: grid; /*define o elemento como container grid*/
+    grid-template-columns: 1fr; /*layout de 1 coluna que ocupa 1 fração de espaço (ou seja, todo o espaço do conteiner)*/
+    grid-gap: 1rem; /*espaçamento entre os elementos da grid, também pode ser usado column-gap e raw-gap*/
+}
+
+section {
+    padding: 1rem;
+    background-color: rgba(238, 250, 255, 0.733);
+}
