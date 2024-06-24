@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+.navbar .menu-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Ajustar */
+}
+
+.navbar .menu-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.navbar .menu-links a:hover {
+    background: #555;
+}
+
+#close-menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger-btn {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 1.7rem;
+    }
+
+    #hamburger-btn,
+    #close-menu-btn {
+        display: block;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .navbar .menu-links {
+        position: fixed;
+        top: 0;
+        right: 0; /* Inicialmente fora da tela */
+        width: 100%; /* Menu ocupa toda a largura da tela */
+        height: auto; /* Ajuste a altura conforme necessário */
+        background: #000;
+        text-align: center;
+        flex-direction: column;
+        padding: 70px 20px 20px;
+        overflow-y: auto; /*rolagem vertical */
+        transform: translateY(-100%); /* Mantém fora da tela inicialmente */
+        transition: transform 0.3s ease;
+    }
+
+    header.show-mobile-menu .navbar .menu-links {
+        transform: translateY(0); /* Traz o menu para dentro da tela */
+    }
+
+    .navbar .menu-links a {
+        color: #fff;
+        padding: 10px;
+        margin: 10px 0; /* Ajustado o margin */
+    }
+
+    #close-menu-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    main {
+        padding-top: 0; /* Padding inicial do main */
+        transition: padding-top 0.3s ease;
+    }
+
+    header.show-mobile-menu + main {
+        padding-top: 35vh; /* Ajuste este valor conforme a altura do menu */
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 80%;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%; /* Ajuste para ocupar toda a largura do grid */
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.footer {
+    background: #000;
+    height: 90px;
+    color: white;
+    font-size: 18px;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
