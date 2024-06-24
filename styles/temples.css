@@ -113,7 +113,6 @@ header .navbar {
     }
 
     main {
-        padding-top: 0; /* Padding inicial do main */
         transition: padding-top 0.3s ease;
     }
 
