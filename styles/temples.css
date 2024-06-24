@@ -56,7 +56,6 @@ header .navbar {
     top: 20px;
     cursor: pointer;
     display: none;
-    background-color: #000;
 }
 
 #hamburger-btn {
@@ -113,6 +112,7 @@ header .navbar {
     }
 
     main {
+        padding-top: 0; /* Padding inicial do main */
         transition: padding-top 0.3s ease;
     }
 
