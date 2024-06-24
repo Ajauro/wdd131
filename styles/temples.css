@@ -56,6 +56,7 @@ header .navbar {
     top: 20px;
     cursor: pointer;
     display: none;
+    background-color: #000;
 }
 
 #hamburger-btn {
