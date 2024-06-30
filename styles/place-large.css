@@ -1,0 +1,10 @@
+@media only screen and (min-width: 750px){
+    .hero img {
+        border-bottom: none;
+    }
+    .footer {
+        margin-top: none;
+    }
+    
+
+}

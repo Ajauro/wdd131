@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WDD 131 | Dynamic Web Fundamentals | Bruna Araújo</title>
+        <meta name="description" content="Dynamic Web Fundamentals | Place page">
+        <meta name="author" content="Bruna Araújo">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Brazil</h1>
+        </header>
+
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/papagaio.webp" media="(min-width: 750px)">
+                    <img src="images/blue-arara.webp" alt="blue-arara" width="400" height="600">
+                </picture>
+            </div>
+            <div class="data">
+                <h2>Data</h2>
+                <div class="info">
+                    <label class="label"><strong>Area:</strong></label><span class="value">8.510.000 Km²</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Population:</strong></label><span class="value">203.080.756</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Capital:</strong></label><span class="value">Brasilia</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Languages:</strong></label><span class="value">Portuguese</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Currency:</strong></label><span class="value">Real (BRL)</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Time Zone:</strong></label><span class="value">UTC-3</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Calling Code:</strong></label><span class="value">+55</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Internet TLD:</strong></label><span class="value">.br</span>   
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/1530392_weather_sun_sunny_temperature_icon.svg" alt="weather-icon" width="150px">
+                <div class="info">
+                    <label class="label"><strong>Temperature:</strong></label>
+                    <span class="value" id="temperature">30 °C</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Conditions:</strong></label>
+                    <span class="value">Sunny</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Wind:</strong></label>
+                    <span class="value" id="windSpeed">10 Km/h</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Wind Chill:</strong></label>
+                    <span class="value" id="windChill">N/A</span>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>©<span id="currentYear"></span> 🦋 Bruna Araújo 🦋 Brazil</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
