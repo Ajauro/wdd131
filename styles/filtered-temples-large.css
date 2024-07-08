@@ -1,0 +1,28 @@
+/* Media Query for wider than mobile viewports */
+@media only screen and (min-width: 700px) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }    
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+    }
+}
