@@ -52,7 +52,7 @@ main {
     text-align: left;
 }
 
-legend {
+h2 {
     font-size: 18px;
 }
 
@@ -70,15 +70,10 @@ legend {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-.wf1 div {
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-.wf1 legend {
+.wf1 h2 {
     padding-top: 1rem;
 }
 
@@ -89,7 +84,6 @@ legend {
 
 .wf1 .o-rating {
     display: flex;
-    justify-content: column;
     align-items: center;
 }
 
@@ -119,7 +113,6 @@ input[type="radio"] {
 
 .checkbox-container {
     display: flex;
-    align-items: left;
     vertical-align: middle;
 }
 

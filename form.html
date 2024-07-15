@@ -16,50 +16,50 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <div>
-                <legend><strong>Product Name</strong></legend>
+                <h2><strong>Product Name</strong></h2>
                 <label>
                     <select name="product-name" id="product-name" required>
-                        <option value="product" disabled selected>Choose a Product ...</option>
+                        <option value="1" disabled selected>Choose a Product ...</option>
                     </select>
                 </label>
             </div>
             <div class="overall-rating">
-                <legend><strong>Overall Rating</strong></legend>
+                <h2><strong>Overall Rating</strong></h2>
             </div>
             <div class="o-rating">
                 <label>★<br>
-                    <input type="radio" name="overall-rating" value="1" autocomplete="off" required>
+                    <input type="radio" name="overall-rating" value="1" required>
                 </label>
                 <label>★★<br>
-                    <input type="radio" name="overall-rating" value="2" autocomplete="off" required>
+                    <input type="radio" name="overall-rating" value="2" required>
                 </label>
                 <label>★★★<br>
-                    <input type="radio" name="overall-rating" value="3" autocomplete="off" required>
+                    <input type="radio" name="overall-rating" value="3" required>
                 </label>
                 <label>★★★★<br>
-                    <input type="radio" name="overall-rating" value="4" autocomplete="off" required>
+                    <input type="radio" name="overall-rating" value="4" required>
                 </label>
                 <label>★★★★★<br>
-                    <input type="radio" name="overall-rating" value="5" autocomplete="off" required>
+                    <input type="radio" name="overall-rating" value="5" required>
                 </label>
             </div>
             <div>
-                <legend><strong>Date of Installation</strong></legend>
-                <label><input type="date" name="date" id="installation-date" autocomplete="instalattion-date" required></label>
+                <h2><strong>Date of Installation</strong></h2>
+                <label><input type="date" name="date" id="installation-date" required></label>
             </div>
             <div>
-                <legend><strong>Which features did you find useful in the product?<i>(Check all that apply)</i></strong></legend>
+                <h2><strong>Which features did you find useful in the product?<i>(Check all that apply)</i></strong></h2>
                 <label class="checkbox-container"><input type="checkbox" name="features" id="durability" value="durability" autocomplete="off">Durability</label>
                 <label class="checkbox-container"><input type="checkbox" name="features" id="ease-of-use" value="ease-of-use" autocomplete="off">Ease of Use</label>
                 <label class="checkbox-container"><input type="checkbox" name="features" id="performance" value="performance" autocomplete="off">Performance</label>
                 <label class="checkbox-container"><input type="checkbox" name="features" id="design" value="design" autocomplete="off">Design</label>
             </div>
             <div>
-                <legend><strong>Written Review </strong><span style="color:rgb(15, 15, 194);">(Optional)</span></legend>
-                <label><textarea name="review" id="written-review" autocomplete="off"></textarea></label>
+                <h2><strong>Written Review </strong>(Optional)</h2>
+                <label><textarea name="review" id="written-review"></textarea></label>
             </div>
             <div>
-                <legend><strong>Your Name </strong><span style="color:rgb(15, 15, 194);">(Optional)</span></legend>
+                <h2><strong>Your Name </strong>(Optional)</h2>
                 <label><input type="text" name="name" id="name" autocomplete="name"></label>
             </div>
             <div class="submit">
