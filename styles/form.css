@@ -1,0 +1,137 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do corpo para pagina review.html*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #000;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Estilos do main */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: left;
+}
+
+.overall-rating {
+    text-align: left;
+}
+
+legend {
+    font-size: 18px;
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #000;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilos adicionais para o formulário */
+.wf1 {
+    background-color: #00000048;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.wf1 div {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.wf1 legend {
+    padding-top: 1rem;
+}
+
+.wt1 label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.wf1 .o-rating {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+}
+
+.wf1 .o-rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.wf1 input[type="text"], .wf1 select, input[type="date"], textarea {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+
+label textarea {
+    height: 150px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: left;
+    vertical-align: middle;
+}
+
+.checkbox-container input {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.submit input{
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: large;
+    margin-bottom: 1rem;
+}
