@@ -128,3 +128,7 @@ input[type="radio"] {
     font-size: large;
     margin-bottom: 1rem;
 }
+
+.optional {
+    color: rgb(13, 13, 146);
+}
