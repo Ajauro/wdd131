@@ -131,4 +131,14 @@ input[type="radio"] {
 
 .optional {
     color: rgb(13, 13, 146);
+    font-weight: 500;
+}
+
+.review p {
+    text-align: center;
+}
+
+.review h2 {
+    font-size: 30px;
+    text-align: center;
 }
