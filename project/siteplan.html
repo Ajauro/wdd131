@@ -8,41 +8,67 @@
         <script src="scripts/siteplan.js" defer></script>
     </head>
     <body>
-        <div class="site-name">
-            <h1>Site Name</h1>
-            <p>Name: All the Recipes I've Loved Before</p>
-            <p>This name represents a recipe site for people who like to cook, or who want to learn through recipes</p>
-        </div>
-        <div class="site-purpose">
-            <h1>Site Purpose</h1>
-            <p>The purpose of the site is to present recipes for healthy, normal, easy, fit, vegan and cultural foods.</p>
-        </div>
-        <div class="scenarios">
-            <h1>Scenarios</h1>
-            <p>On the site users will find a variety of recipes, and the main thing is that through a "donate your recipe" 
-                form users will be able to contribute to the growth of the site, i.e. they will register on the site and be able to 
-                send in their own recipes, and we will collect the information and add it to the site, with the user's author information.
-                We'll have some navigation tabs to guide you to healthy, vegan, international recipes, etc. Site information, help and contact tabs. 
-                As the main users use mobile devices, it will have a good design for navigation.</p>
-        </div>
-        <div class="color-schema">
-            <h1>Color Schema</h1>
-            <a href="https://coolors.co/palette/590d22-800f2f-a4133c-c9184a-ff4d6d-ff758f-ff8fa3-ffb3c1-ffccd5-fff0f3">Palette</a>
-            <p>Title color: #590D22 and #000</p>
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Welcome</h1>
+                <ul class="menu-links">
+                    <li id="close-menu-btn" class="material-symbols-outlined">x</li>
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="general">General</a></li>
+                    <li><a href="#" id="healthy">Healthy</a></li>
+                    <li><a href="#" id="veggie">Veggie</a></li>
+                    <li><a href="#" id="inter">International</a></li>
+                    <li><a href="#" id="your-recipe">Your Recipe</a></li>
+                </ul>
+                <span id="hamburger-btn" class="material-symbols-outlined">☰</span>
+            </nav>
+        </header>
 
-                <p>Text color: #590D22 and #000</p> 
-                
-                <p>Background color: #FFF0F3</p>
-        </div>
-        <div class="typography">
-            <h1>Typography</h1>
-            <a href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap">Font 1</a> 
-            <a href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap">Font 2</a>
-        </div>
-        <div class="wireframe">
-            <h1>Wireframe</h1>
-            <a href="https://app.moqups.com/unsaved/701d379d/edit/page/ad64222d5">Wireframe</a>
-            <a href="https://app.moqups.com/unsaved/701d379d/edit/page/a592ecd51">Wireframe mobile</a>
-        </div>
+        <main>
+            <div class="grid-container">
+            <!--JavaScript code-->
+            </div>
+            <div class="hero">  
+                <picture>
+                    <source srcset="images/Cream Illustrative Healthy Food Recipes YouTube Intro Video.webp" media="(min-width: 500px)">
+                    <img src="images/Cream Illustrative Healthy Food Recipes YouTube Intro Video.webp" alt="page-image" width="500" height="300" loading="lazy">
+                </picture>
+            </div>
+            <div class="all-recipes">
+                <a href="general.html">All Recipes</a>
+            </div>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum fuga nulla iusto aspernatur, veritatis non ex aliquid, eveniet saepe accusamus voluptatum debitis, inventore eos molestiae excepturi. Sunt placeat ipsam distinctio.</p>
+            </div>
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <p>WhatsApp: <img src="images/whatsapp.png" alt="WhatsApp logo" width="20" height="20"> +55 85 99945-0000</p>
+                <p>Email: <img src="images/email.png" alt="Email logo" width="20" height="20"> alltherecipesihavelovedb@gmail.com</p>
+                <p>Instagram: <img src="images/instagram.png" alt="Instagram logo" width="20" height="20"> @allrecipes_ilb</p>
+            </div>
+            <div class="form">
+                <form method="get" action="subscribe.html" class="wf1">
+                    <fieldset>
+                        <div>
+                            <h2>Subscribe</h2>
+                            <h3><strong>Name: </strong></h3>
+                            <label><input type="text" name="name" id="name" autocomplete="name" required></label>
+                        </div>
+                        <div>
+                            <h3><strong>Email: </strong></h3>
+                            <label><input type="text" name="email" id="email" autocomplete="email" required></label>
+                        </div>
+                        <div class="submit">
+                            <label><input type="submit" value="Subscribe Now"></label>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>©<span id="currentYear"></span> 🦋 Bruna Araujo 🦋 Brazil</p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>
