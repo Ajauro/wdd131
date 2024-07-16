@@ -17,9 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-body {
     font-family:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
     background-color: #FFCCD5;
 }
@@ -46,7 +43,7 @@ header .navbar {
 }
 
 .navbar .logo {
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.959);
     font-weight: 100;
     font-size: 1.5rem;
 }
