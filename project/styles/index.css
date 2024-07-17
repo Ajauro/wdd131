@@ -12,7 +12,7 @@ html, body {
     padding: 0;
 }
 
-/* Estilos do corpo para pagina review.html*/
+/* Estilos do corpo para pagina subscribe.html*/
 body {
     display: flex;
     flex-direction: column;
@@ -21,9 +21,11 @@ body {
     background-color: #FFCCD5;
 }
 
-h2 {
+.tittle h2 {
     text-align: center;
     margin-top: 1.5rem;
+    font-size: 30px;
+    font-family: "Confortaa", cursive;
 }
 
 header {
@@ -148,25 +150,53 @@ div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    max-width: 80%;
+    max-width: 90%;
+    margin: 2rem auto;
     justify-content: center;
-
 }
 
-.our-recipes a {
-    text-decoration: none;
-    background-color: #A4133C;
-    font-family: "Confortaa", cursive;
-    font-size: 2rem;
+.footer {
+    background: #590D22;
+    height: 100px;
     color: white;
-    padding: 10px 100px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top: 30px;
+    font-size: 18px;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-.our-recipes a:hover {
-    background-color: #590D22;
+/* Estilos gerais para os cartões de templos */
+.recipe-card {
+    background-color: #fda3b3;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    margin: 20px;
+}
+
+/* Adicione uma pequena animação de escala quando o cartão é pairado */
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+/* Outros estilos gerais, se necessário */
+.recipe-card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: "Confortaa", cursive;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #590D22;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 /* Media Query for wider than mobile viewports */
@@ -184,29 +214,17 @@ div {
     #menu {
         display: none;
     }    
-    div .about-us {
-        margin: 20px;
-        text-align: justify;
-    }
 }
 
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr; /* Uma coluna em telas menores */
     }
-    .about-us {
-        margin: 20px;
-        text-align: justify;
-    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
-    }
-    div .about-us {
-        margin: 20px;
-        text-align: justify;
     }
 }
 
@@ -218,129 +236,4 @@ div {
 
 .contact-us a {
     text-decoration: none;
-}
-
-.about-us, .our-purpose {
-    font-family: "Confortaa", cursive;
-}
-
-.about-us p, .our-purpose p {
-    margin: 20px;
-    font-weight: 100;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.about-and-purpose {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 100%;
-    padding: 30px;
-    margin-top: 1.5rem;
-}
-
-.about-us, .our-purpose {
-    background-color: #FFB3C1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    .about-and-purpose {
-        grid-template-columns: 1fr;
-    }
-}
-
-.subscription h2 {
-    font-size: 30px;
-    text-align: center;
-    font-family: "Confortaa", cursive;
-}
-
-.wf1 {
-    background-color: #590d2325;
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 2rem;
-}
-
-fieldset {
-    border: none;
-}
-
-form h2 {
-    color: #000;
-    font-size: 30px;
-    font-family: "Confortaa", cursive;
-}
-
-.wf1 h3 {
-    padding-top: 0.8rem;
-    color: #000;
-    text-align: left;
-    margin-left: 20px;
-    font-family: "Confortaa", cursive;
-}
-
-.wt1 label {
-    display: block;
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
-
-.wf1 input {
-    padding: 10px;
-    width: 90%;
-    border: 0px solid #fff;
-    border-radius: 10px;
-}
-
-.submit input{
-    padding: 0.5rem;
-    width: 50%;
-    margin-top: 2rem;
-    font-size: large;
-    margin-bottom: 1rem;
-    font-family: "Confortaa", cursive;
-}
-
-.submit input:hover {
-    background-color: rgb(11, 65, 11);
-    color: whitesmoke;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 10px solid var(--borders-color);
-}
-
-header h1 {
-    color: whitesmoke;
-    text-align: center;
-}
-
-@media only screen and (min-width: 749px) {
-
-    .hero img {
-        width: 100%;
-        height: 650px;
-        object-fit: cover;
-    }
-}
-
-.footer {
-    background: #590D22;
-    height: 100px;
-    color: white;
-    font-size: 18px;
-    margin-top: 2rem;
-    text-align: center;
-    padding: 1.5rem;
 }
