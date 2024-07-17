@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+    font-family: "Confortaa", cursive;
     background-color: #FFCCD5;
 }
 
@@ -153,6 +153,22 @@ div {
 
 }
 
+.our-recipes a {
+    text-decoration: none;
+    background-color: #A4133C;
+    font-family: "Confortaa", cursive;
+    font-size: 2rem;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.our-recipes a:hover {
+    background-color: #590D22;
+}
+
 /* Media Query for wider than mobile viewports */
 @media only screen and (min-width: 700px) {
     .navigation {
@@ -194,18 +210,53 @@ div {
     }
 }
 
-.contact-us {
+.contact-us h2 {
     margin-bottom: 1rem;
     text-align: center;
+    font-family: "Confortaa", cursive;
 }
 
-.subscribe p {
-    text-align: center;
+.contact-us a {
+    text-decoration: none;
 }
 
-.subscribe h2 {
+.about-us, .our-purpose {
+    font-family: "Confortaa", cursive;
+}
+
+.about-us p, .our-purpose p {
+    margin: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-and-purpose {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    padding: 30px;
+    margin-top: 1.5rem;
+}
+
+.about-us, .our-purpose {
+    background-color: #FFB3C1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-and-purpose {
+        grid-template-columns: 1fr;
+    }
+}
+
+.subscription h2 {
     font-size: 30px;
     text-align: center;
+    font-family: "Confortaa", cursive;
 }
 
 .wf1 {
@@ -214,6 +265,8 @@ div {
     max-width: 450px;
     margin: 0 auto;
     padding: 10px;
+    border-radius: 10px;
+    margin-top: 2rem;
 }
 
 fieldset {
@@ -223,10 +276,7 @@ fieldset {
 form h2 {
     color: #000;
     font-size: 30px;
-}
-
-.wf1 p {
-    font-size: 30px;
+    font-family: "Confortaa", cursive;
 }
 
 .wf1 h3 {
@@ -234,6 +284,7 @@ form h2 {
     color: #000;
     text-align: left;
     margin-left: 20px;
+    font-family: "Confortaa", cursive;
 }
 
 .wt1 label {
@@ -246,9 +297,8 @@ form h2 {
     padding: 10px;
     width: 90%;
     border: 0px solid #fff;
-    border-radius: 20px;
+    border-radius: 10px;
 }
-
 
 .submit input{
     padding: 0.5rem;
@@ -256,6 +306,7 @@ form h2 {
     margin-top: 2rem;
     font-size: large;
     margin-bottom: 1rem;
+    font-family: "Confortaa", cursive;
 }
 
 .submit input:hover {
@@ -289,7 +340,7 @@ header h1 {
     height: 100px;
     color: white;
     font-size: 18px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
     padding: 1.5rem;
 }
