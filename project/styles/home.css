@@ -166,6 +166,7 @@ div {
 
 .our-recipes a:hover {
     background-color: #590D22;
+    transform: scale(1.05);
 }
 
 /* Media Query for wider than mobile viewports */

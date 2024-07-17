@@ -19,95 +19,61 @@ hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobil
 closeMenuBtn.addEventListener("click", () => header.classList.remove("show-mobile-menu"));
 
 const recipes = [
-    {
-        title: "Creamy Chicken Paté",
-        imageUrl: "images/pate-de-frango.jpg",
-        file: "chicken-pate.html"
-    },
-    {
-        title: "Homemade Waffle Recipe",
-        imageUrl: "images/waffles.jpg",
-        file: "waffles.html"
-    },
-    {
-        title: "Cinnamon Rolls",
-        imageUrl: "images/cinnamon-roll.jpg",
-        file: "cinnamon-roll.html"
-    },
-    {
-        title: "Vegan Chocolate Cake",
-        imageUrl: "images/vegan_chocolate_cake.jpg",
-        file: "vegan-chocolate-cake.html"
-    },
-    {
-        title: "Arabic Hummus",
-        imageUrl: "images/arabic-hummus.jpg",
-        file: "arabic-hummus.html"
-    },
-    {
-        title: "American Pancakes",
-        imageUrl: "images/americanpancake.jpg",
-        file: "american-pancakes.html"
-    },
-    {
-        title: "Protein-Packed Quinoa Salad",
-        imageUrl: "images/quinoa-salad.jpg",
-        file: "quinoa-salad.html"
-    },
-    {
-        title: "Brazilian Hot Dog (Cachorro Quente)",
-        imageUrl: "images/brazilian-hot-dog.jpg",
-        file: "brazilian-hotdog.html"
-    },
-    {
-        title: "Easy Pasta Aglio e Olio",
-        imageUrl: "images/spaghetti-aglio-olio.jpg",
-        file: "pasta-aglio-olio.html"
-    }
+    { title: "Creamy Chicken Paté", imageUrl: "images/pate-de-frango.jpg", file: "chicken-pate.html", category: "savoury" },
+    { title: "Homemade Waffle Recipe", imageUrl: "images/waffles.jpg", file: "waffles.html", category: "sweet" },
+    { title: "Cinnamon Rolls", imageUrl: "images/cinnamon-roll.jpg", file: "cinnamon-roll.html", category: "sweet" },
+    { title: "Vegan Chocolate Cake", imageUrl: "images/vegan_chocolate_cake.jpg", file: "vegan-chocolate-cake.html", category: "veggie" },
+    { title: "Arabic Hummus", imageUrl: "images/arabic-hummus.jpg", file: "arabic-hummus.html", category: "fit" },
+    { title: "American Pancakes", imageUrl: "images/americanpancake.jpg", file: "american-pancakes.html", category: "sweet" },
+    { title: "Protein-Packed Quinoa Salad", imageUrl: "images/quinoa-salad.jpg", file: "quinoa-salad.html", category: "fit" },
+    { title: "Brazilian Hot Dog (Cachorro Quente)", imageUrl: "images/brazilian-hot-dog.jpg", file: "brazilian-hotdog.html", category: "savoury" },
+    { title: "Easy Pasta Aglio e Olio", imageUrl: "images/spaghetti-aglio-olio.jpg", file: "pasta-aglio-olio.html", category: "savoury" }
 ];
-
 
 const gridContainer = document.querySelector('.grid-container');
 
-recipes.forEach(recipe => {
-    const recipeCard = document.createElement('div');
-    recipeCard.classList.add('recipe-card');
+function createRecipeCards(recipes) {
+    gridContainer.innerHTML = '';
+    recipes.forEach(recipe => {
+        const recipeCard = document.createElement('div');
+        recipeCard.classList.add('recipe-card');
 
-    const recipeImage = document.createElement('img');
-    recipeImage.src = recipe.imageUrl;
-    recipeImage.alt = recipe.title;
+        const recipeImage = document.createElement('img');
+        recipeImage.src = recipe.imageUrl;
+        recipeImage.alt = recipe.title;
 
-    const recipeTitle = document.createElement('h3');
-    recipeTitle.textContent = recipe.title;
+        const recipeTitle = document.createElement('h3');
+        recipeTitle.textContent = recipe.title;
 
-    recipeCard.appendChild(recipeImage);
-    recipeCard.appendChild(recipeTitle);
-    gridContainer.appendChild(recipeCard);
+        recipeCard.appendChild(recipeImage);
+        recipeCard.appendChild(recipeTitle);
+        gridContainer.appendChild(recipeCard);
 
-    recipeCard.addEventListener('click', () => {
-        window.location.href = recipe.file;
+        recipeCard.addEventListener('click', () => {
+            window.location.href = recipe.file;
+        });
     });
-});
+}
 
-//event listeners for navigation menu items
-document.querySelector("index.html").addEventListener("click", () => createTempleCard(temples));
+createRecipeCards(recipes);
+
+document.querySelector("index.html").addEventListener("click", () => createRecipeCards(recipes));
 document.querySelector("#sweet").addEventListener("click", () => {
-    const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
-    createTempleCard(oldTemples);
+    const sweetRecipes = recipes.filter(recipe => recipe.category === "sweet");
+    createRecipeCards(sweetRecipes);
 });
-document.querySelector("#savouries").addEventListener("click", () => {
-    const newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
-    createTempleCard(newTemples);
+document.querySelector("#savoury").addEventListener("click", () => {
+    const savouryRecipes = recipes.filter(recipe => recipe.category === "savoury");
+    createRecipeCards(savouryRecipes);
 });
 document.querySelector("#veggie").addEventListener("click", () => {
-    const largeTemples = temples.filter(temple => temple.area > 90000);
-    createTempleCard(largeTemples);
+    const veganRecipes = recipes.filter(recipe => recipe.category === "vegan");
+    createRecipeCards(veganRecipes);
 });
 document.querySelector("#fit").addEventListener("click", () => {
-    const smallTemples = temples.filter(temple => temple.area < 10000);
-    createTempleCard(smallTemples);
+    const fitRecipes = recipes.filter(recipe => recipe.category === "fit");
+    createRecipeCards(fitRecipes);
 });
-
 
 
 

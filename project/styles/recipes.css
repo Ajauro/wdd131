@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main ,.grid-container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Estilos do corpo para pagina subscribe.html*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Confortaa", cursive;
+    background-color: #FFCCD5;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 30px;
+    font-family: "Confortaa", cursive;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background-color: #590D22;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    color: rgba(245, 245, 245, 0.959);
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.navbar .menu-links {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Ajustar */
+}
+
+.navbar .menu-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.2s ease;
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+
+.navbar .menu-links a:hover {
+    background: #FF4D6D;
+    color:#000
+}
+
+#close-menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger-btn {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 10px;
+    }
+    .navbar .logo {
+        font-size: 1.2rem;
+    }
+
+    #hamburger-btn,
+    #close-menu-btn {
+        display: block;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .navbar .menu-links {
+        position: fixed;
+        top: 0;
+        right: 0; /* Inicialmente fora da tela */
+        width: 100%; /* Menu ocupa toda a largura da tela */
+        height: auto; /* Ajuste a altura conforme necessário */
+        background: #590D22;
+        color:whitesmoke;
+        text-align: center;
+        flex-direction: column;
+        padding: 60px 20px 20px;
+        overflow-y: auto; /*rolagem vertical */
+        transform: translateY(-100%); /* Mantém fora da tela inicialmente */
+        transition: transform 0.3s ease;
+    }
+
+    header.show-mobile-menu .navbar .menu-links {
+        transform: translateY(0); /* Traz o menu para dentro da tela */
+    }
+
+    .navbar .menu-links a {
+        color: #fff;
+        padding: 10px;
+        margin: 10px 0; /* Ajustado o margin */
+    }
+
+    #close-menu-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .recipe-card {
+        background-color: #fda3b3;
+        width: 60%;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.2s;
+        margin: 30px auto;
+    }
+    
+    /* Adicione uma pequena animação de escala quando o cartão é pairado */
+    .recipe-card:hover {
+        transform: scale(1.05);
+    }
+    .recipe-card h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-family: "Confortaa", cursive;
+    }
+    
+    .recipe-card p {
+        font-size: 0.9rem;
+    }
+    
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 10px #590D22;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    header.show-mobile-menu + main {
+        padding-top: 35vh; /* Ajuste este valor conforme a altura do menu */
+    }
+}
+
+div {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 90%;
+    margin: 2rem auto;
+    justify-content: center;
+} */
+
+.footer {
+    background: #590D22;
+    height: 100px;
+    color: white;
+    font-size: 18px;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Estilos gerais para os cartões de templos */
+.recipe-card {
+    background-color: #fda3b3;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Adicione uma pequena animação de escala quando o cartão é pairado */
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+/* Outros estilos gerais, se necessário */
+.recipe-card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: "Confortaa", cursive;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #590D22;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* Media Query for wider than mobile viewports */
+@media only screen and (min-width: 700px) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }    
+    .recipe-card {
+        background-color: #fda3b3;
+        width: 60%;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.2s;
+        margin: 30px auto;
+    }
+    
+    /* Adicione uma pequena animação de escala quando o cartão é pairado */
+    .recipe-card:hover {
+        transform: scale(1.05);
+    }
+    .recipe-card h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-family: "Confortaa", cursive;
+    }
+    
+    .recipe-card p {
+        font-size: 0.9rem;
+    }
+    
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 10px #590D22;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+    .recipe-card {
+        background-color: #fda3b3;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.2s;
+        margin: 30px auto;
+    }
+    
+    /* Adicione uma pequena animação de escala quando o cartão é pairado */
+    .recipe-card:hover {
+        transform: scale(1.05);
+    }
+    .recipe-card h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-family: "Confortaa", cursive;
+    }
+    
+    .recipe-card p {
+        font-size: 0.9rem;
+    }
+    
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 10px #590D22;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+    }
+    .recipe-card {
+        background-color: #fda3b3;
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.2s;
+        margin: 30px auto;
+    }
+    
+    /* Adicione uma pequena animação de escala quando o cartão é pairado */
+    .recipe-card:hover {
+        transform: scale(1.05);
+    }
+    .recipe-card h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-family: "Confortaa", cursive;
+    }
+    
+    .recipe-card p {
+        font-size: 0.9rem;
+    }
+    
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 10px #590D22;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+}
+
+.contact-us h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Confortaa", cursive;
+}
+
+.contact-us a {
+    text-decoration: none;
+}
+
+.link {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.link a {
+    text-decoration: none;
+    background-color: #A4133C;
+    font-family: "Confortaa", cursive;
+    font-size: 18px;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.link a:hover {
+    background-color: #590D22;
+    transform: scale(1.05);
+}

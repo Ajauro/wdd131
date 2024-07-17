@@ -172,6 +172,7 @@ div {
     border-radius: 10px;
     transition: transform 0.2s;
     margin: 20px;
+    cursor: pointer;
 }
 
 /* Adicione uma pequena animação de escala quando o cartão é pairado */
@@ -236,4 +237,27 @@ div {
 
 .contact-us a {
     text-decoration: none;
+}
+
+.link {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.link a {
+    text-decoration: none;
+    background-color: #A4133C;
+    font-family: "Confortaa", cursive;
+    font-size: 20px;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.link a:hover {
+    background-color: #590D22;
+    transform: scale(1.05);
 }
