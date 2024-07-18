@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>WDD 131 | Site Plan</title>
+        <title>Submitted Recipes</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Bruna Araújo">
+        <meta name="author" content="Bruna Araújo">
         <link rel="stylesheet" href="styles/home.css">
-        <script src="scripts/home.js" defer></script>
+        <script src="scripts/submitted-recipe.js" defer></script>
     </head>
     <body>
         <header>
@@ -15,15 +17,26 @@
                     <li id="close-menu-btn" class="material-symbols-outlined">×</li>
                     <li><a href="home.html" id="home">Home</a></li>
                     <li><a href="index.html" id="general">Recipes</a></li>
-                    <li><a href="your-recipe.html" id="your-recipe">Your Recipe</a></li>>
+                    <li><a href="your-recipe.html" id="your-recipe">Add Your Recipe</a></li>
                 </ul>
                 <span id="hamburger-btn" class="material-symbols-outlined">≡</span>
             </nav>
         </header>
         <main>
             <div class="subscription">
-                <h2>Thank you for share your recipe with us!</h2>
+                <h2>Thank you for sharing your recipe with us!</h2>
                 <h2>Soon we'll put it on our website and send you an email notification.</h2>
+                <br>
+            </div>
+            <div id="submitted-data">
+                <h3>Submitted Recipe Details:</h3>
+                <p><strong>Recipe Name:</strong> <span id="submitted-recipe-name"></span></p>
+                <p><strong>Date:</strong> <span id="submitted-date"></span></p>
+                <p><strong>Ingredients:</strong> <span id="submitted-ingredients"></span></p>
+                <p><strong>Preparation Steps:</strong> <span id="submitted-preparation"></span></p>
+                <p><strong>Tips:</strong> <span id="submitted-tips"></span></p>
+                <p><strong>Your Name:</strong> <span id="submitted-name"></span></p>
+                <p><strong>Email:</strong> <span id="submitted-email"></span></p>
             </div>
         </main>
         <footer class="footer">

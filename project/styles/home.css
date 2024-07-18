@@ -159,7 +159,7 @@ div {
     font-size: 2rem;
     color: white;
     padding: 10px 100px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: inline-block;
     margin-top: 40px;
 }
@@ -260,12 +260,12 @@ div {
 }
 
 .wf1 {
-    background-color: #590d2325;
+    background-color: #ff4d6e69;
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 2rem;
 }
 
@@ -297,7 +297,7 @@ form h2 {
     padding: 10px;
     width: 90%;
     border: 0px solid #fff;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .submit input{
@@ -307,10 +307,11 @@ form h2 {
     font-size: large;
     margin-bottom: 1rem;
     font-family: "Confortaa", cursive;
+    border-radius: 20px;
 }
 
 .submit input:hover {
-    background-color: rgb(11, 65, 11);
+    background-color: #590D22;
     color: whitesmoke;
 }
 
@@ -344,3 +345,10 @@ header h1 {
     text-align: center;
     padding: 1.5rem;
 }
+
+#submitted-data p, h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

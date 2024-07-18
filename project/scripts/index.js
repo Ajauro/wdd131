@@ -81,7 +81,9 @@ document.querySelector("#fit").addEventListener("click", () => {
     createRecipeCards(fitRecipes);
 });
 
-
+document.querySelector("#all").addEventListener("click", () => {
+    window.location.href = "index.html";
+})
 
 
 

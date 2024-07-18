@@ -21,13 +21,6 @@ body {
     background-color: #FFCCD5;
 }
 
-.tittle h2 {
-    text-align: center;
-    margin-top: 1.5rem;
-    font-size: 30px;
-    font-family: "Confortaa", cursive;
-}
-
 header {
     top: 0;
     left: 0;
@@ -150,10 +143,6 @@ main {
     text-align: left;
 }
 
-.overall-rating {
-    text-align: left;
-}
-
 h2 {
     font-size: 18px;
 }
@@ -176,6 +165,7 @@ h2 {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 20px;
 }
 
 .wf1 h2 {
@@ -187,22 +177,11 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-.wf1 .o-rating {
-    display: flex;
-    align-items: center;
-}
-
-.wf1 .o-rating label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-
-.wf1 input[type="text"], .wf1 select, input[type="date"], textarea {
+.wf1 input[type="text"], input[type="date"], textarea {
     padding: 0.5rem;
     width: 100%;
     border: 1px solid #fff;
+    border-radius: 20px;
 }
 
 
@@ -222,23 +201,16 @@ input[type="file"] {
     margin-bottom: 0.5rem;
 }
 
-.checkbox-container {
-    display: flex;
-    vertical-align: middle;
-}
-
-.checkbox-container input {
-    width: 20px;
-    margin-right: 5px;
-}
-
 .submit input{
     padding: 0.5rem;
-    width: 100%;
-    margin: 0 auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 1rem;
     font-size: large;
     margin-bottom: 1rem;
+    border-radius: 20px;
+    border: none;
 }
 
 .submit input:hover {
@@ -247,16 +219,3 @@ input[type="file"] {
     transform: scale(1.05);
 }
 
-.optional {
-    color: rgb(13, 13, 146);
-    font-weight: 500;
-}
-
-.review p {
-    text-align: center;
-}
-
-.review h2 {
-    font-size: 30px;
-    text-align: center;
-}

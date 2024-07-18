@@ -28,6 +28,33 @@ body {
     font-family: "Confortaa", cursive;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #A4133C;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    transform: scale(1.05);
+    background-color: #fda3b3;
+    color: #000;
+}
+
 header {
     top: 0;
     left: 0;
