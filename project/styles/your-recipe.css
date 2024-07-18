@@ -139,22 +139,26 @@ header .navbar {
         padding-top: 35vh; /* Ajuste este valor conforme a altura do menu */
     }
 }
-
-div {
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    max-width: 90%;
-    margin: 1rem auto;
+/* Estilos do main */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: left;
 }
 
+.overall-rating {
+    text-align: left;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/* Estilos do rodapé */
 .footer {
     background: #590D22;
     height: 100px;
@@ -162,102 +166,97 @@ div {
     font-size: 18px;
     margin-top: 2rem;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
-/* Estilos gerais para os cartões de templos */
-.recipe-card {
-    background-color: #fda3b3;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.2s;
-    margin: 20px;
-    cursor: pointer;
-}
-
-/* Adicione uma pequena animação de escala quando o cartão é pairado */
-.recipe-card:hover {
-    transform: scale(1.05);
-}
-
-/* Outros estilos gerais, se necessário */
-.recipe-card h3 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-family: "Confortaa", cursive;
-}
-
-.recipe-card p {
-    font-size: 0.9rem;
-}
-
-.recipe-card img {
+/* Estilos adicionais para o formulário */
+.wf1 {
+    background-color: #ff4d6e69;
     width: 100%;
-    height: auto;
-    box-shadow: 0px 0px 10px #590D22;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-/* Media Query for wider than mobile viewports */
-@media only screen and (min-width: 700px) {
-    .navigation {
-        display: flex;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-    .navigation a {
-        text-align: center;
-    }
-    #menu {
-        display: none;
-    }    
-}
-
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
-    }
-}
-
-.contact-us h2 {
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family: "Confortaa", cursive;
-}
-
-.contact-us a {
-    text-decoration: none;
-}
-
-.link {
-    width: 80%;
+    max-width: 500px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-.link a {
-    text-decoration: none;
-    background-color: #A4133C;
-    font-family: "Confortaa", cursive;
-    font-size: 20px;
-    color: white;
-    padding: 20px 60px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 35px;
+.wf1 h2 {
+    padding-top: 1rem;
 }
 
-.link a:hover {
+.wt1 label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.wf1 .o-rating {
+    display: flex;
+    align-items: center;
+}
+
+.wf1 .o-rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.wf1 input[type="text"], .wf1 select, input[type="date"], textarea {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+
+label textarea {
+    height: 150px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+input[type="file"] {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-container {
+    display: flex;
+    vertical-align: middle;
+}
+
+.checkbox-container input {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.submit input{
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+.submit input:hover {
     background-color: #590D22;
+    color: whitesmoke;
     transform: scale(1.05);
+}
+
+.optional {
+    color: rgb(13, 13, 146);
+    font-weight: 500;
+}
+
+.review p {
+    text-align: center;
+}
+
+.review h2 {
+    font-size: 30px;
+    text-align: center;
 }

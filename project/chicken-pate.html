@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creamy Chicken Paté</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/recipes.js">defer</script>
-</head>
-<body>
-    <nav class="navbar">
-        <h1 class="logo">Recipes</h1>
-        <ul class="menu-links">
-            <li id="close-menu-btn" class="material-symbols-outlined">×</li>
-            <li><a href="home.html" id="home">Home</a></li>
-            <li><a href="index.html" id="general">Recipes</a></li>
-            <li><a href="#" id="sweets">Sweets</a></li>
-            <li><a href="#" id="savouries">Savouries</a></li>
-            <li><a href="#" id="veggie">Veggie</a></li>
-            <li><a href="#" id="fit">Fit</a></li>
-            <li><a href="your-recipe.html" id="your-recipe">Your Recipe</a></li>
-        </ul>
-        <span id="hamburger-btn" class="material-symbols-outlined">≡</span>
-    </nav>
-    <header>
-        <h1>Creamy Chicken Paté</h1>
-        <img src="images/pate-de-frango.jpg" alt="Chicken Pâté Image">
-    </header>
-    <main>
-        <section class="ingredients">
-            <h2>Ingredients</h2>
-            <ul>
-                <li>2 chicken breasts, cooked and shredded</li>
-                <li>1 can of cream (unsweetened)</li>
-                <li>1/2 cup of mayonnaise</li>
-                <li>1 tablespoon of mustard</li>
-                <li>1 tablespoon of ketchup</li>
-                <li>1 small onion, grated</li>
-                <li>2 cloves of garlic, minced</li>
-                <li>Salt and black pepper to taste</li>
-                <li>Chopped parsley to taste</li>
-                <li>Olive oil for sautéing</li>
-            </ul>
-        </section>
-        <section class="instructions">
-            <h2>Instructions</h2>
-            <ol>
-                <li>Preparing the Chicken: Cook the chicken breasts in water with a pinch of salt until fully cooked. Shred the chicken using a fork or food processor.</li>
-                <li>Sauteing: In a pan, heat a little olive oil and sauté the onion until translucent. Add the garlic and sauté for another minute.</li>
-                <li>Mixing the Paté: In a large bowl, mix the shredded chicken, sautéed onion and garlic. Add the cream, mayonnaise, mustard, and ketchup, and mix well.</li>
-                <li>Seasoning: Season with salt and black pepper to taste. Add chopped parsley and mix until all ingredients are well combined.</li>
-                <li>Chilling: Transfer the pâté to a container with a lid and refrigerate for at least 1 hour before serving. This will enhance the flavors and firm up the texture.</li>
-                <li>Serving: Serve the creamy chicken pâté with toast, bread, or crackers.</li>
-            </ol>
-        </section>
-        <section class="tips">
-            <h2>Tips</h2>
-            <ul>
-                <li>For extra flavor, you can add chopped olives, grated carrots, or sweet corn to the pâté.</li>
-                <li>For a lighter version, substitute mayonnaise with plain yogurt.</li>
-            </ul>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <p>©<span id="currentYear"></span> 🦋 Bruna Araujo 🦋 Brazil</p>
-        <p id="lastModified"></p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creamy Chicken Paté</title>
+        <link rel="stylesheet" href="styles/recipes.css">
+        <script src="scripts/chicken-pate.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Recipes</h1>
+                <ul class="menu-links">
+                    <li id="close-menu-btn" class="material-symbols-outlined">×</li>
+                    <li><a href="home.html" id="home">Home</a></li>
+                    <li><a href="index.html" id="general">Recipes</a></li>
+                    <li><a href="#" id="sweets">Sweets</a></li>
+                    <li><a href="#" id="savouries">Savouries</a></li>
+                    <li><a href="#" id="veggie">Veggie</a></li>
+                    <li><a href="#" id="fit">Fit</a></li>
+                    <li><a href="your-recipe.html" id="your-recipe">Your Recipe</a></li>
+                </ul>
+                <span id="hamburger-btn" class="material-symbols-outlined">≡</span>
+            </nav>
+        </header>
+        <main>
+            <div class="grid-container">
+                <!--JavaScript code will populate this-->
+            </div>
+            <section class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 chicken breasts, cooked and shredded</li>
+                    <li>1 can of cream (unsweetened)</li>
+                    <li>1/2 cup of mayonnaise</li>
+                    <li>1 tablespoon of mustard</li>
+                    <li>1 tablespoon of ketchup</li>
+                    <li>1 small onion, grated</li>
+                    <li>2 cloves of garlic, minced</li>
+                    <li>Salt and black pepper to taste</li>
+                    <li>Chopped parsley to taste</li>
+                    <li>Olive oil for sautéing</li>
+                </ul>
+            </section>
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Preparing the Chicken: Cook the chicken breasts in water with a pinch of salt until fully cooked. Shred the chicken using a fork or food processor.</li>
+                    <li>Sauteing: In a pan, heat a little olive oil and sauté the onion until translucent. Add the garlic and sauté for another minute.</li>
+                    <li>Mixing the Paté: In a large bowl, mix the shredded chicken, sautéed onion and garlic. Add the cream, mayonnaise, mustard, and ketchup, and mix well.</li>
+                    <li>Seasoning: Season with salt and black pepper to taste. Add chopped parsley and mix until all ingredients are well combined.</li>
+                    <li>Chilling: Transfer the pâté to a container with a lid and refrigerate for at least 1 hour before serving. This will enhance the flavors and firm up the texture.</li>
+                    <li>Serving: Serve the creamy chicken pâté with toast, bread, or crackers.</li>
+                </ol>
+            </section>
+            <section class="tips">
+                <h2>Tips</h2>
+                <ul>
+                    <li>For extra flavor, you can add chopped olives, grated carrots, or sweet corn to the pâté.</li>
+                    <li>For a lighter version, substitute mayonnaise with plain yogurt.</li>
+                </ul>
+            </section>
+            <section class="rating">
+                <h2>Rating</h2>
+                <div class="stars" id="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <p class="rating-result">Average Rating: <span id="average-rating">0</span></p>
+            </section>
+            <div class="contact-us">
+                <h2>Contact Us</h2> 
+                    <a href="https://wa.me/qr/MRKN5Z7VB3VZF1" target="_blank">
+                        <img src="images/icons8-whatsapp.svg" alt="w-logo" width="100" height="50">
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/" target="_blank">
+                        <img src="images/icons8-correio-de-maçã.svg" alt="e-logo" width="100" height="50">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="images/icons8-instagram (1).svg" alt="i-logo" width="100" height="50">
+                    </a>
+                </p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>©<span id="currentYear"></span> 🦋 Bruna Araujo 🦋 Brazil</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>

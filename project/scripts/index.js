@@ -19,15 +19,15 @@ hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobil
 closeMenuBtn.addEventListener("click", () => header.classList.remove("show-mobile-menu"));
 
 const recipes = [
-    { title: "Creamy Chicken Paté", imageUrl: "images/pate-de-frango.jpg", file: "chicken-pate.html", category: "savoury" },
-    { title: "Homemade Waffle Recipe", imageUrl: "images/waffles.jpg", file: "waffles.html", category: "sweet" },
-    { title: "Cinnamon Rolls", imageUrl: "images/cinnamon-roll.jpg", file: "cinnamon-roll.html", category: "sweet" },
-    { title: "Vegan Chocolate Cake", imageUrl: "images/vegan_chocolate_cake.jpg", file: "vegan-chocolate-cake.html", category: "veggie" },
-    { title: "Arabic Hummus", imageUrl: "images/arabic-hummus.jpg", file: "arabic-hummus.html", category: "fit" },
-    { title: "American Pancakes", imageUrl: "images/americanpancake.jpg", file: "american-pancakes.html", category: "sweet" },
-    { title: "Protein-Packed Quinoa Salad", imageUrl: "images/quinoa-salad.jpg", file: "quinoa-salad.html", category: "fit" },
-    { title: "Brazilian Hot Dog (Cachorro Quente)", imageUrl: "images/brazilian-hot-dog.jpg", file: "brazilian-hotdog.html", category: "savoury" },
-    { title: "Easy Pasta Aglio e Olio", imageUrl: "images/spaghetti-aglio-olio.jpg", file: "pasta-aglio-olio.html", category: "savoury" }
+    { title: "Creamy Chicken Paté", imageUrl: "images/pate-de-frango.jpg", file: "chicken-pate.html", category: "savouries"},
+    { title: "Homemade Waffle Recipe", imageUrl: "images/waffles.jpg", file: "waffles.html", category: "sweets"},
+    { title: "Cinnamon Rolls", imageUrl: "images/cinnamon-roll.jpg", file: "cinnamon-roll.html", category: "sweets"},
+    { title: "Vegan Chocolate Cake", imageUrl: "images/vegan_chocolate_cake.jpg", file: "vegan-chocolate-cake.html", category: "veggie"},
+    { title: "Arabic Hummus", imageUrl: "images/arabic-hummus.jpg", file: "arabic-hummus.html", category: "fit"},
+    { title: "American Pancakes", imageUrl: "images/americanpancake.jpg", file: "american-pancakes.html", category: "sweets"},
+    { title: "Protein-Packed Quinoa Salad", imageUrl: "images/quinoa-salad.jpg", file: "quinoa-salad.html", category: "fit"},
+    { title: "Brazilian Hot Dog (Cachorro Quente)", imageUrl: "images/brazilian-hot-dog.jpg", file: "brazilian-hotdog.html", category: "savouries"},
+    { title: "Easy Pasta Aglio e Olio", imageUrl: "images/spaghetti-aglio-olio.jpg", file: "pasta-aglio-olio.html", category: "savouries"}
 ];
 
 const gridContainer = document.querySelector('.grid-container');
@@ -41,6 +41,7 @@ function createRecipeCards(recipes) {
         const recipeImage = document.createElement('img');
         recipeImage.src = recipe.imageUrl;
         recipeImage.alt = recipe.title;
+        recipeImage.loading = "lazy";
 
         const recipeTitle = document.createElement('h3');
         recipeTitle.textContent = recipe.title;
@@ -56,20 +57,25 @@ function createRecipeCards(recipes) {
 }
 
 createRecipeCards(recipes);
+document.querySelector("#general").addEventListener("click", () => {
+    createRecipeCards(recipes);
+});
 
-document.querySelector("index.html").addEventListener("click", () => createRecipeCards(recipes));
-document.querySelector("#sweet").addEventListener("click", () => {
-    const sweetRecipes = recipes.filter(recipe => recipe.category === "sweet");
+document.querySelector("#sweets").addEventListener("click", () => {
+    const sweetRecipes = recipes.filter(recipe => recipe.category === "sweets");
     createRecipeCards(sweetRecipes);
 });
-document.querySelector("#savoury").addEventListener("click", () => {
-    const savouryRecipes = recipes.filter(recipe => recipe.category === "savoury");
+
+document.querySelector("#savouries").addEventListener("click", () => {
+    const savouryRecipes = recipes.filter(recipe => recipe.category === "savouries");
     createRecipeCards(savouryRecipes);
 });
+
 document.querySelector("#veggie").addEventListener("click", () => {
-    const veganRecipes = recipes.filter(recipe => recipe.category === "vegan");
+    const veganRecipes = recipes.filter(recipe => recipe.category === "veggie");
     createRecipeCards(veganRecipes);
 });
+
 document.querySelector("#fit").addEventListener("click", () => {
     const fitRecipes = recipes.filter(recipe => recipe.category === "fit");
     createRecipeCards(fitRecipes);

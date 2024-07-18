@@ -30,6 +30,7 @@ h2 {
     margin-top: 1.5rem;
     font-size: 30px;
     font-family: "Confortaa", cursive;
+    margin-bottom: 20px;
 }
 
 header {
@@ -169,6 +170,7 @@ header .navbar {
     header.show-mobile-menu + main {
         padding-top: 35vh; /* Ajuste este valor conforme a altura do menu */
     }
+
 }
 
 div {
@@ -317,6 +319,7 @@ div {
         margin-top: 20px;
         border-radius: 10px;
     }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -354,6 +357,7 @@ div {
         margin-top: 20px;
         border-radius: 10px;
     }
+    
 }
 
 .contact-us h2 {
@@ -387,4 +391,37 @@ div {
 .link a:hover {
     background-color: #590D22;
     transform: scale(1.05);
+}
+
+.ingredients, .instructions, .tips {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ingredients ul, .instructions ol, .tips ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0;
+}
+
+.ingredients li, .instructions li, .tips li {
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.stars {
+    font-size: 40px;
+}
+.star {
+    cursor: pointer;
+    color: gold;
+    
 }

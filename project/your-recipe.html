@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 | Product Review Form</title>
+    <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Bruna Araújo | Form">
+    <meta name="author" content="Bruna Araújo">
+    <link rel="stylesheet" href="styles/your-recipe.css">
+    <script src="scripts/your-recipe.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Your Fav Recipe</h1>
+            <ul class="menu-links">
+                <li id="close-menu-btn" class="material-symbols-outlined">×</li>
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="index.html" id="general">Recipes</a></li>
+                <li><a href="your-recipe.html" id="your-recipe">Your Recipe</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">≡</span>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="submitted-recipes.html" class="wf1" enctype="multipart/form-data">
+            <div>
+                <h2><strong>Recipe Name</strong></h2>
+                <label><input type="text" name="recipe-name" id="name" autocomplete="recipe-name" required></label>
+            </div>
+            <div>
+                <h2><strong>Date</strong></h2>
+                <label><input type="date" name="date" id="installation-date" required></label>
+            </div>
+            <div>
+                <h2><strong>Ingredients</strong></h2>
+                <label><textarea name="ingredients" id="ingredients" rows="4" cols="50"></textarea></label>
+            </div>
+            <div>
+                <h2><strong>Preparation Steps</strong></h2>
+                <label><textarea name="preparation" id="preparation" rows="6" cols="50"></textarea></label>
+            </div>
+            <div>
+                <h2><strong>Tips</strong></h2>
+                <label><textarea name="tips" id="tips" rows="4" cols="50"></textarea></label>
+            </div>
+            <div>
+                <h2><strong>Recipe Image Upload</strong></h2>
+                <label><input type="file" name="recipe-image" id="recipe-image" accept="image/*"></label>
+            </div>
+            <div>
+                <h2><strong>Your Name:</strong></h2>
+                <label><input type="text" name="name" id="name" autocomplete="name" required></label>
+            </div>
+            <div>
+                <h2><strong>Email:</strong></h2>
+                <label><input type="text" name="email" id="email" autocomplete="email" required></label>
+            </div>
+            <div class="submit">
+                <label><input type="submit" value="Post Recipe"></label>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>©<span id="currentYear"></span> 🔸 Bruna Araújo 🔸 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
