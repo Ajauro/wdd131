@@ -168,7 +168,7 @@ header .navbar {
     }
 
     header.show-mobile-menu + main {
-        padding-top: 35vh; /* Ajuste este valor conforme a altura do menu */
+        padding-top: 20vh; /* Ajuste este valor conforme a altura do menu */
     }
 
 }
