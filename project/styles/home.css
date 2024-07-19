@@ -19,7 +19,6 @@ body {
     justify-content: space-between;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #FFCCD5;
-    font-weight: 700;
 }
 
 h2 {
@@ -45,7 +44,7 @@ header .navbar {
 
 .navbar .logo {
     color: rgba(245, 245, 245, 0.959);
-    font-weight: 100;
+    font-weight: 700;
     font-size: 1.5rem;
 }
 
@@ -245,7 +244,7 @@ div {
 
 .about-us p, .our-purpose p {
     margin: 20px;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 25px;
     text-align: justify;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
